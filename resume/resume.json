@@ -17,7 +17,7 @@
         },
         "profiles": [
             {
-                "network": "LinkedIn",
+                "network": "freeCodeCamp",
                 "username": "johndoe",
                 "url": "https://www.linkedin.com/in/johndoe"
             },

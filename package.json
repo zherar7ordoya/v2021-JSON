@@ -1,5 +1,5 @@
 {
-  "name": "next-resume",
+  "name": "nextjs-resume",
   "description": "Create a multilingual resume with next.js",
   "version": "1.0.0",
   "main": "server.js",
@@ -7,7 +7,7 @@
   "homepage": "https://github.com/feelingit/next-resume",
   "license": "MIT",
   "dependencies": {
-    "next": "^10.0.2",
+    "next": "^10.0.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
