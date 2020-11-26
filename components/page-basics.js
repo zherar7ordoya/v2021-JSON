@@ -31,7 +31,7 @@
 
 *************************************************/
 
-export default ({basics = [ ]}) =>
+const Basics = ({basics = [ ]}) =>
   <div id="Basics">
     <h2> {basics.label} </h2>
     <div>
@@ -59,3 +59,5 @@ export default ({basics = [ ]}) =>
       }
     `}</style>
   </div>
+
+export default Basics;

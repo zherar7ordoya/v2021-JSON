@@ -1,4 +1,4 @@
-export default function(props) {
+export default function Title(props) {
 
   if (!props.count || props.count === 0) {
     return null;

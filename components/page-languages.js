@@ -12,7 +12,7 @@ import Title from './title'
 
 *************************************************/
 
-export default ({title, languages = [ ]}) =>
+const Languages = ({title, languages = [ ]}) =>
   <div id="Languages">
     <Title title={title} count={languages.length} />
     { languages.map((language, languageIndex) =>
@@ -23,3 +23,6 @@ export default ({title, languages = [ ]}) =>
     <style jsx>{`
     `}</style>
   </div>
+
+
+export default Languages;

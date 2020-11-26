@@ -1,5 +1,4 @@
-import Head from "../components/head";
-
+import HeadExpanded from "../components/head";
 import Name from "../components/page-name";
 import Summary from "../components/page-summary";
 import Basics from "../components/page-basics";
@@ -13,9 +12,9 @@ import Publications from "../components/page-publications";
 import Interests from "../components/page-interests";
 import References from "../components/page-references";
 
-export default ({ language, theme, resume }) => (
+const HomePage = ({ language, theme, resume }) => (
     <div className="page">
-        <Head title={resume.basics.name} theme={theme} />
+        <HeadExpanded title={resume.basics.name} theme={theme} />
         <Name name={resume.basics.name} />
         <Basics basics={resume.basics} />
         <Summary title={language.summary} summary={resume.basics.summary} />
@@ -34,11 +33,7 @@ export default ({ language, theme, resume }) => (
             title={language.references}
             references={resume.references}
         />
-
-        <script
-            src="https://dohliam.github.io/dropin-minimal-css/switcher.js"
-            type="text/javascript"
-        ></script>
-        
     </div>
 );
+
+export default HomePage;

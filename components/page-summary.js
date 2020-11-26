@@ -1,6 +1,6 @@
 import Title from './title'
 
-export default ({title, summary = ''}) =>
+const Summary =  ({title, summary = ''}) =>
   <div id="Summary">
     <Title title={title} count={summary.length} />
     <span> {summary} </span>
@@ -13,3 +13,5 @@ export default ({title, summary = ''}) =>
       }
     `}</style>
   </div>
+
+export default Summary;

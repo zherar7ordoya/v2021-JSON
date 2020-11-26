@@ -16,7 +16,7 @@ import Title from './title'
 
 *************************************************/
 
-export default ({title, skills = [ ]}) =>
+const Skills =  ({title, skills = [ ]}) =>
   <div id="Skills">
     <Title title={title} count={skills.length} />
     { skills.map((skill, s) =>
@@ -45,3 +45,5 @@ export default ({title, skills = [ ]}) =>
       }
     `}</style>
   </div>
+
+export default Skills;

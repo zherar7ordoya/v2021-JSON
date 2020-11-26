@@ -11,7 +11,7 @@ import Title from './title'
 
 *************************************************/
 
-export default ({title, references = [ ]}) =>
+const References = ({title, references = [ ]}) => 
   <div id="References">
     <Title title={title} count={references.length} />
     { references.map((reference, referenceIndex) =>
@@ -30,4 +30,7 @@ export default ({title, references = [ ]}) =>
         margin-bottom: 10px;
       }
     `}</style>
-  </div>
+  </div>;
+  
+
+export default References;

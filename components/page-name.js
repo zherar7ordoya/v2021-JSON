@@ -1,4 +1,4 @@
-export default ({name}) =>
+const Name = ({name}) =>
   <div id="Name">
     <h1> {name} </h1>
     <style jsx>{`
@@ -10,3 +10,5 @@ export default ({name}) =>
       }
     `}</style>
   </div>
+
+export default Name;

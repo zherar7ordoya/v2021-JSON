@@ -14,7 +14,7 @@ import Title from './title'
 
 *************************************************/
 
-export default ({title, interests = [ ]}) =>
+const Interests = ({title, interests = [ ]}) =>
   <div id="interests">
     <Title title={title} count={interests.length} />
     { interests.map((interest, interestIndex) =>
@@ -42,3 +42,5 @@ export default ({title, interests = [ ]}) =>
       }
     `}</style>
   </div>
+
+export default Interests;

@@ -13,7 +13,7 @@ import Title from './title'
 
 *************************************************/
 
-export default ({title, awards = [ ]}) =>
+const Awards = ({title, awards = [ ]}) =>
   <div id="Awards">
     <Title title={title} count={awards.length} />
     { awards.map((award, awardIndex) =>
@@ -31,3 +31,5 @@ export default ({title, awards = [ ]}) =>
       }
     `}</style>
   </div>
+
+export default Awards;
